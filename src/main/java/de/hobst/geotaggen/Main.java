@@ -28,10 +28,10 @@ public class Main {
             ResultSet rs=stmt.executeQuery("select * from route");
             while(rs.next()) {
                 //System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3));
-                System.out.println(rs.getInt("plz")+"  "+rs.getString("ort"));
                 int plz = rs.getInt("plz");
                 int id = rs.getInt("ID");
                 String ort = rs.getString("ort");
+                System.out.println(id + " " + plz + " " + ort);
                 if(rs.getObject("Entfernung") != null){
                     System.out.println("Übersprungen");
                     continue;
