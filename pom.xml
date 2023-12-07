@@ -57,7 +57,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>de.hobst.geotaggen.Main</mainClass>
+                            <mainClass>de.goldendeveloper.geotaggen.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -89,20 +89,25 @@
     </repositories>
 
     <dependencies>
-            <dependency>
-                <groupId>com.google.maps</groupId>
-                <artifactId>google-maps-services</artifactId>
-                <version>2.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>2.0.9</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.30</version>
-            </dependency>
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.maps</groupId>
+            <artifactId>google-maps-services</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
     </dependencies>
 </project>
